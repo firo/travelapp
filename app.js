@@ -18,5 +18,5 @@ const app = new App({
 
 (async () => {
   await app.start();
-  console.log('⚡️ Bolt app started');
+  console.log('⚡️ Travel app started');
 })();
