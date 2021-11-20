@@ -34,7 +34,8 @@ app.action('req-submit', async ({ body, ack, say }) => {
 });
 
 (async () => {
+  const port = 3000
   // Start your app
-  await app.start(process.env.PORT || 3000);
-  console.log('⚡️ Firo Bolt app is running!');
+  await app.start(process.env.PORT || port);
+  console.log('⚡️ Firo Bolt app is running on port ${ PORT }!');
 })();
