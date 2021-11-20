@@ -1,3 +1,5 @@
+// app.js - Slack Application
+
 const { App } = require('@slack/bolt');
 
 // Initialize Bolt app, using the default HTTPReceiver
