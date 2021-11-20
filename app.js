@@ -1,24 +1,21 @@
-// app.js - Slack Application
-
 const { App } = require('@slack/bolt');
 
-// Initialize Bolt app, using the default HTTPReceiver
+/*
+This sample slack application uses SocketMode
+For the companion getting started setup guide,
+see: https://slack.dev/bolt-js/tutorial/getting-started
+*/
+
+// Initializes your app with your bot token and app token
 const app = new App({
   token: process.env.SLACK_BOT_TOKEN,
-  signingSecret: process.env.SLACK_SIGNING_SECRET,
-  customRoutes: [
-    {
-      path: '/health-check',
-      method: ['GET'],
-      handler: (req, res) => {
-        res.writeHead(200);
-        res.end('Health check information displayed here!');
-      },
-    },
-  ],
+  socketMode: true,
+  appToken: process.env.SLACK_APP_TOKEN
 });
 
 (async () => {
-  await app.start();
-  console.log('⚡️ Travel app started');
+  // Start your app
+  await app.start(process.env.PORT || 3000);
+
+  console.log('⚡️ Firo Bolt app is running!');
 })();
