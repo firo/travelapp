@@ -37,10 +37,10 @@ app.action('req-submit', async ({ body, ack, say }) => {
 // Listens to reactio  "white_check_mark" and say "Your travel is approved!"
 app.event('reaction_added', ({body, event, say}) => {
   if (event.reaction == 'white_check_mark' ){
-    fetchMessage(event.item.channel, event.item.ts, function(res) {
+    //fetchMessage(event.item.channel, event.item.ts, function(res) {
       console.log('response: '+ res);
-      say(`<@${event.user}> Your travel is approved!`);
-    });
+      say(`<@${event.user}> Your travel request is approved!`);
+    //});
   }
 
 });
