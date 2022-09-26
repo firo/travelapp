@@ -51,7 +51,7 @@
 			},
 			"accessory": {
 				"type": "datepicker",
-				"initial_date": "2021-12-01",
+				"initial_date": "2022-09-30",
 				"placeholder": {
 					"type": "plain_text",
 					"text": "Select a date",
@@ -68,7 +68,7 @@
 			},
 			"accessory": {
 				"type": "datepicker",
-				"initial_date": "2021-12-02",
+				"initial_date": "2022-09-30",
 				"placeholder": {
 					"type": "plain_text",
 					"text": "Select a date",
