@@ -94,7 +94,7 @@
 					{
 						"text": {
 							"type": "plain_text",
-							"text": "Customer facing",
+							"text": "Customer facing*",
 							"emoji": true
 						},
 						"value": "value-0"
@@ -102,7 +102,7 @@
 					{
 						"text": {
 							"type": "plain_text",
-							"text": "Internal Business Travel*",
+							"text": "Internal Business Travel",
 							"emoji": true
 						},
 						"value": "value-1"
